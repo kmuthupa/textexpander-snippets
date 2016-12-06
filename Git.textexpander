@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Git</string>
+		<key>notes</key>
+		<string></string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:pull:all</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Git pull multiple sub-directories</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>find ~me/projects/ -type d -name .git \
+| xargs -n 1 dirname \
+| sort \
+| while read line; do echo $line &amp;&amp; cd $line &amp;&amp; git pull; done</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C93E7AA0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:push:all</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Push all Git Heads (Branches)</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git push --all</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C96C8F80-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:clone:mirror</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Clone Git repo as a mirror from the original source</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git clone --mirror %fill:URL%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C98A0290-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:config</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Show Git user config settings (short)</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>%snippet:git:config:user% &amp;&amp; %snippet:git:config:email%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C98CE8C0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:config:email</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Show Git config email</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git config user.email</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C9AAA9F0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:config:user</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Show Git config username</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git config user.name</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C9C69660-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:config:list</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List all Git config settings</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git config --list</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C9F43610-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:add</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Add files to Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git add %fill:files%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C9F74350-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:move</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Move files in a Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git mv %fill:file%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA1308B0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remove</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Remove file from Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git rm %fill:file%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA25A650-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:restore</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Restore file from a specific revision</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git checkout %clipboard %fill:filename%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA425610-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:reset</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Unstage (reset) files in a Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git reset HEAD %fill:files%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA5EDEC0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:diff</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Display diff of changes</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git diff %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA8D1AB0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remote:add</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Add and track remote Git repository (URL)</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git remote add %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA9ECDF0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:patch:format</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Format Git patch</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git format-patch origin/master</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CABA6C40-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:commit</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Commit with message to Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git commit -m "%fill:message%"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CAE796C0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:clone</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Clone Git repository</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git clone %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CAFB1EC0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:user</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Introduce yourself to Git (user name &amp; email)</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git config user.name "%fill:firstname% %fill:lastname%" &amp;&amp; git config user.email "%fill:email%"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CB17A770-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:delete:branch</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Delete remote branch</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git push origin :%remote_branch%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CB3604E0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:pull:branch</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Pull remote branch</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git pull origin %branch</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CB561000-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remote:show</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Show remote origin details</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git remote show origin</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CBAEB750-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remote</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List remote branches &amp; Tags</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git ls-remote</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CBFA6650-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:branch:list:all</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List all branches</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git branch -a</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CC372130-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:branch:list</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List local branches</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git branch</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CC5A1280-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remote:info</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List remote branch details</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git remote</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CC951FB0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:remote:ref</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>List remote branches references</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git branch -r</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CCB2B9D0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:push:branch</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Push local branch to remote branch</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git push origin %branch</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CCDF4810-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:push:tags</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Push Tags</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git push --tags</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CD10B850-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>git:tag</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>label</key>
+			<string>Create a new Tag using a SHA</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:29:18Z</date>
+			<key>plainText</key>
+			<string>git tag -m"%message" %tag %sha</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD2CCBD0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

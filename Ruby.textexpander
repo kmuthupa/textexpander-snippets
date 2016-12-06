@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Ruby</string>
+		<key>notes</key>
+		<string></string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:version</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Get Gem package manger version</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem -v</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E6B53420-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:version</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Get Ruby version</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>ruby -v</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E6DDCAC0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:info</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Show all Ruby gem environment details</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem environment</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E6EEBAB0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:clean</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Clean up old versions of installed Ruby gems</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem cleanup%fillpart:name=Gem name% gem_name%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E70D6640-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:find</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Find the location</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem which %filltext:name=Gem name%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E748E8A0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:update</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Update installed Ruby gems</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem update%fillpart:name=Gem name% gem_name%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E7676D20-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:gems</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Install RubyGems.org client</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem install gems</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E785A380-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:list</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>List installed Ruby Gems</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem list</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E7B231C0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:install</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Download and install a Ruby Gem</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem install %filltext:name=Gem name%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E7E109F0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ruby:gem:search</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>label</key>
+			<string>Search for a Ruby Gem</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:30:07Z</date>
+			<key>plainText</key>
+			<string>gem search -r%fillpart:name=Local search%l%fillpartend% %filltext:name=Keyword%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E7F1F9E0-B0D0-11E6-8375-5F38640B11C1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

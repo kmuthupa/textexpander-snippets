@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Utilities</string>
+		<key>notes</key>
+		<string></string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,hta-socialredirect</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Apache Social Redirects</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>&lt;IfModule mod_alias.c&gt;
+	Redirect permanent /@  https://twitter.com/:you
+	Redirect permanent /~  https://github.com/:you
+	Redirect permanent /+  https://plus.google.com/:you
+	Redirect permanent /f  https://facebook.com/:you
+	Redirect permanent /in https://linkedin.com/in/:you
+&lt;/IfModule&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CC94E6B0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,hta-hotlinking</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>.htaccess - Prevent hotlinking</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>RewriteEngine On
+#Replace ?mysite\.com/ with your blog url
+RewriteCond %{HTTP_REFERER} !^http://(.+\.)?mysite\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^$
+#Replace /images/nohotlink.jpg with your "don't hotlink" image url
+RewriteRule .*\.(jpe?g|gif|bmp|png)$ /images/nohotlink.jpg [L]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CCC21130-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,httpdre</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>/etc/init.d/httpd reload</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CCE1F540-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,simplehtaccess</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Simple Rewrite</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/$ $1.html 
+
+# Forces a trailing slash to be added
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD00EEF0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,editorconfig</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>.editorconfig</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string># editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD1ED730-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>fdate</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Finder Friendly Date</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>%Y-%m-%d</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD4C01B0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddate</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>%B %e, %Y</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD5C2E50-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttime</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>%1I:%M %p</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD8931C0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ftdate</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Full Date + Time</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>%Y-%m-%d %H:%M:%S</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CDA8C7B0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,myip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Ext IP</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>#!/bin/sh
+/bin/echo -n `curl http://api.externalip.net/ip/`</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CDD703A0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,wifiip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Wifi IP</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>#!/bin/sh
+/bin/echo -n `ipconfig getifaddr en1`</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CDF69990-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,ethip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Ethernet IP</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>#!/bin/sh
+/bin/echo -n `ipconfig getifaddr en4`</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CE33A290-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,showhidden</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Show Mac OS X Hidden Files</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>defaults write com.apple.Finder AppleShowAllFiles YES</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CE4FDD20-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,refreshhosts</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Refresh Hosts</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>dscacheutil -flushcache; sudo killall -HUP mDNSResponder</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CE6030D0-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,gitc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>label</key>
+			<string>Git Commit Template</string>
+			<key>modificationDate</key>
+			<date>2016-11-22T16:43:37Z</date>
+			<key>plainText</key>
+			<string>[%fillpopup:name=type:default=Feature:Update:Fix:Docs:Style:Refactor:Test:Chore:RELEASE%] %filltext:name=subject%
+
+%fillarea:name=body%
+
+%fillpart:name=GitHub Issue:default=no%GitHub-Issue: %filltext:name=Github Issue%%fillpartend%
+%fillpart:name=Ticket:default=no%Tickets: %filltext:name=Ticket ID%%fillpartend%
+%fillpart:name=Additional Notes:default=no%See-Also: %filltext:name=See Also Notes%%fillpartend%
+%fillpart:name=Fixes:default=no%Fixes: %filltext:name=Tickets Fixed%%fillpartend%
+%fillpart:name=Resolves:default=no%Resolves: %filltext:name=Tickets Resolved%%fillpartend%
+%fillpart:name=Closes:default=no%Closes: %filltext:name=Tickets Closed%%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CE6E3A90-B0D2-11E6-8375-5F38640B11C1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
